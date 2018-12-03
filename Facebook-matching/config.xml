@@ -83,7 +83,7 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-facebook4" spec="^3.2.0">
-        <variable name="APP_ID" value="“726818404362716”" />
-        <variable name="APP_NAME" value="“UT-matching”" />
+        <variable name="APP_ID" value="726818404362716" />
+        <variable name="APP_NAME" value="UT-matching" />
     </plugin>
 </widget>
