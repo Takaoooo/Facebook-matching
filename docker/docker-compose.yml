@@ -26,7 +26,7 @@ services:
      ports:
        - "80:80"
      volumes:
-       - ./wordpress/wp-content/themes/twentynineteen:/var/www/html
+       - ./wordpress/wp-content/themes/twentynineteen:/var/www/html/wp-content/themes/twentynineteen
        - ssh:/ssh
      restart: always
      environment:
