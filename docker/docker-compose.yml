@@ -16,7 +16,7 @@ services:
        MYSQL_USER: wordpress
        MYSQL_PASSWORD: wordpress
      networks:
-       - network_ut-matching       
+       - network_ut-matching
 
    wordpress: 
      container_name: "ut-matching-wp"
@@ -26,7 +26,7 @@ services:
      ports:
        - "80:80"
      volumes:
-       - ./wordpress:/var/www/html
+       - ./wordpress/wp-content/themes/twentynineteen:/var/www/html
        - ssh:/ssh
      restart: always
      environment:
