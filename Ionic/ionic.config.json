@@ -1,5 +1,7 @@
 {
   "name": "Facebook-matching",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
