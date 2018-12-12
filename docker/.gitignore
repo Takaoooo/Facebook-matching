@@ -8,4 +8,5 @@
 !/wordpress/wp-content/themes
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/twentynineteen
+!/wordpress/wp-content/themes/dazzling
 /db/data
