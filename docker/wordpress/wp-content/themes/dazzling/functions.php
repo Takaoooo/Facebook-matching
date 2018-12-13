@@ -356,7 +356,9 @@ function bourgen_create_post_type(){
         'editor',
         'excerpt',
         'thumnail',
-        'cutom-fields',
+        'custom-fields',
+        'comments',
+        'author'
       )
     )
   );
@@ -374,7 +376,8 @@ function bourgen_create_post_type(){
         'editor',
         'excerpt',
         'thumnail',
-        'cutom-fields',
+        'custom-fields',
+        'author'
       )
     )
   );
@@ -392,7 +395,8 @@ function bourgen_create_post_type(){
         'editor',
         'excerpt',
         'thumnail',
-        'cutom-fields',
+        'custom-fields',
+        'author'
       )
     )
   );
