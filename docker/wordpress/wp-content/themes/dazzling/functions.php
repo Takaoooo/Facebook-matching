@@ -331,3 +331,70 @@ function of_get_option( $name, $default = false ) {
   return $default;
 }
 endif;
+
+/**
+ * カスタム投稿の作成
+ *
+ * <基本的な書き方>
+ * function bourgen_create_post_type(){
+ *    register_post_type($post_type, $args);
+ * }
+ * add_action('init','bourgen_create_post_type',1);
+ */
+
+function bourgen_create_post_type(){
+  register_post_type('idea',
+    array(
+      'labels' => array(
+        'name' => 'アイデア',
+        'singular_name' => 'アイデア'
+      ),
+      'public' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumnail',
+        'cutom-fields',
+      )
+    )
+  );
+
+  register_post_type('scout',
+    array(
+      'labels' => array(
+        'name' => 'スカウト',
+        'singular_name' => 'スカウト'
+      ),
+      'public' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumnail',
+        'cutom-fields',
+      )
+    )
+  );
+
+  register_post_type('user',
+    array(
+      'labels' => array(
+        'name' => 'ユーザー',
+        'singular_name' => 'ユーザー'
+      ),
+      'public' => true,
+      'menu_position' => 5,
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumnail',
+        'cutom-fields',
+      )
+    )
+  );
+}
+add_action('init','bourgen_create_post_type',1);
