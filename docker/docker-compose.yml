@@ -10,7 +10,7 @@ services:
        - ./db/data:/var/lib/mysql
       # - ./db/backup1213:/var/lib/mysql
       # - ./db/data/backup.sql:/var/lib/mysql
-       - ./db/mysqld.conf:/etc/mysql/mysql.conf.d/mysqld.cnf
+      #  - ./db/mysqld.conf:/etc/mysql/mysql.conf.d/mysqld.cnf
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: wordpress
@@ -29,7 +29,7 @@ services:
        - "80:80"
      volumes:
        - ./wordpress/wp-content/themes:/var/www/html/wp-content/themes
-       - ssh:/ssh
+      #  - ssh:/ssh
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
