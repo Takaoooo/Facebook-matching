@@ -402,3 +402,30 @@ function bourgen_create_post_type(){
   );
 }
 add_action('init','bourgen_create_post_type',1);
+
+/**
+ * カスタム分類の作成
+ *
+ * ＜基本的な書き方＞
+ * function bourgen_create_taxonomies(){
+ *    register_taxonomy($taxonomy, $object_type, $args);
+ * }
+ * add_action('init', 'bourgen_create_taxonomies',1);
+ */
+
+function bourgen_create_taxonomies(){
+  $labels = array(
+    'name'    =>    'ユーザーの分類',
+    'singular_name'   =>  'ユーザーの分類'
+  );
+  register_taxonomy(  'type', array('user'),
+    array(
+      'hierarchical'  =>  true,
+      'labels'        =>  $labels,
+      'show_ui'       =>  true,
+      'show_admin_column' =>  true,
+      'show_in_nav_menus' =>  true,
+    )
+  );
+}
+add_action('init', 'bourgen_create_taxonomies',1);
