@@ -7,8 +7,8 @@ services:
      ports:
        - 13306:3306     
      volumes:
-       - ./db/data:/var/lib/mysql
-      # - ./db/backup1213:/var/lib/mysql
+      #  - ./db/data:/var/lib/mysql
+      - ./backup1213:/var/lib/mysql
       # - ./db/data/backup.sql:/var/lib/mysql
       #  - ./db/mysqld.conf:/etc/mysql/mysql.conf.d/mysqld.cnf
      restart: always
