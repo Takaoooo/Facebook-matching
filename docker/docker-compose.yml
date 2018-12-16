@@ -10,7 +10,7 @@ services:
       #  - ./db/data:/var/lib/mysql
       - ./backup1213:/var/lib/mysql
       # - ./db/data/backup.sql:/var/lib/mysql
-      #  - ./db/mysqld.conf:/etc/mysql/mysql.conf.d/mysqld.cnf
+       - ./db/mysqld.conf:/etc/mysql/mysql.conf.d/mysqld.cnf
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: wordpress
