@@ -9,6 +9,7 @@
 /wordpress/wp-content/themes/*
 !/wordpress/wp-content/themes/twentynineteen
 !/wordpress/wp-content/themes/dazzling
+!/wordpress/wp-content/languages
 # !/wordpress/wp-admin
 /db/data
 /backup1213
