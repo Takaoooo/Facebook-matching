@@ -10,6 +10,8 @@
 !/wordpress/wp-content/themes/twentynineteen
 !/wordpress/wp-content/themes/dazzling
 !/wordpress/wp-content/languages
+!/wordpress/wp-content/plugins
+!/wordpress/wp-content/uploads
 # !/wordpress/wp-admin
 /db/data
 /db/backup1213
