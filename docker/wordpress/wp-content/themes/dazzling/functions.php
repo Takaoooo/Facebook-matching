@@ -415,10 +415,23 @@ add_action('init','bourgen_create_post_type',1);
 
 function bourgen_create_taxonomies(){
   $labels = array(
-    'name'    =>    'ユーザーの分類',
-    'singular_name'   =>  'ユーザーの分類'
+    'name'    =>    'ジャンル',
+    'singular_name'   =>  'ジャンル'
   );
-  register_taxonomy(  'type', array('user'),
+  register_taxonomy(  'type', array('idea'),
+    array(
+      'hierarchical'  =>  true,
+      'labels'        =>  $labels,
+      'show_ui'       =>  true,
+      'show_admin_column' =>  true,
+      'show_in_nav_menus' =>  true,
+    )
+  );
+  $labels = array(
+    'name'    =>    '職種',
+    'singular_name'   =>  '職種'
+  );
+  register_taxonomy(  'job', array('user'),
     array(
       'hierarchical'  =>  true,
       'labels'        =>  $labels,
